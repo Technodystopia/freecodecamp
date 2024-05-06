@@ -1,0 +1,78 @@
+body {
+    background-color: #000;
+    color: #0f0;
+    font-family: 'Courier New', monospace;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #0f0;
+    border-radius: 10px;
+    background-color: #111;
+}
+
+h1 {
+    text-align: center;
+}
+
+#description {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #0f0;
+    border-radius: 5px;
+    background-color: #222;
+    color: #0f0;
+    font-family: 'Courier New', monospace;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #0f0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0f0;
+    color: #000;
+    font-family: 'Courier New', monospace;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #090;
+}
