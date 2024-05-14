@@ -1,0 +1,47 @@
+body {
+    font-family: 'Matrix Code', sans-serif;
+    background-color: black;
+    color: green;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid green;
+    border-radius: 5px;
+    font-family: 'Matrix Code', sans-serif;
+    background-color: black;
+    color: green;
+    outline: none;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: green;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Matrix Code', sans-serif;
+  }
+  
+  button:hover {
+    background-color: black;
+    color: green;
+  }
+  
+  #result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  
