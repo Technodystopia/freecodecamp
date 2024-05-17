@@ -1,0 +1,58 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0c0c0c;
+    color: #d4d4d4;
+    background-image: url('https://upload.wikimedia.org/wikipedia/en/e/e1/Thexfiles.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 300px;
+    box-sizing: border-box;
+    background-color: #222;
+    border: 1px solid #555;
+    color: #d4d4d4;
+}
+
+input[type="text"]::placeholder {
+    color: #888;
+}
+
+button {
+    padding: 8px 20px;
+    cursor: pointer;
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005d99;
+}
+
+#results-div {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#results-div.invalid {
+    color: #ff6347;
+}
