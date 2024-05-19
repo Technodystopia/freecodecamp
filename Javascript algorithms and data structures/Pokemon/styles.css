@@ -1,0 +1,62 @@
+body {
+    font-family: "Pokemon Solid", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://archives.bulbagarden.net/media/upload/d/d1/2016_Mythical_Pok%C3%A9mon_Distributions_artwork.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 60%;
+    border: 2px solid #FFCB05;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #FFCB05;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #FDD835;
+  }
+  
+  #pokemon-info {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  #types {
+    margin-top: 10px;
+  }
+  
+  #types div {
+    display: inline-block;
+    background-color: #FFCB05;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  
