@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quote Machine</title>
+  <style>
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    #quote-box {
+      width: 80%;
+      max-width: 700px;
+      margin: 20px;
+      text-align: center;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .btn {
+      margin: 5px;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn-secondary {
+      background-color: #6c757d;
+    }
+  </style>
+</head>
+<body>
+  <div id="quote-box" class="card">
+    <div class="card-body">
+      <blockquote class="blockquote mb-0">
+        <p id="text">This is a sample quote.</p>
+        <footer class="blockquote-footer">
+          <cite id="author" title="Source Title">Author</cite>
+        </footer>
+      </blockquote>
+    </div>
+    <div class="card-footer">
+      <button id="new-quote" class="btn btn-primary">New Quote</button>
+      <a id="tweet-quote" class="btn btn-secondary" href="https://twitter.com/intent/tweet?text=This%20is%20a%20sample%20quote%20-%20Author" target="_blank" rel="noopener noreferrer">
+        Tweet Quote
+      </a>
+    </div>
+  </div>
+
+  <script>
+    const quotes = [
+      {
+        text: "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+        author: "Nelson Mandela"
+      },
+      {
+        text: "The way to get started is to quit talking and begin doing.",
+        author: "Walt Disney"
+      },
+      {
+        text: "Your time is limited, so don't waste it living someone else's life.",
+        author: "Steve Jobs"
+      },
+      {
+        text: "If life were predictable it would cease to be life, and be without flavor.",
+        author: "Eleanor Roosevelt"
+      },
+      {
+        text: "If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough.",
+        author: "Oprah Winfrey"
+      },
+      {
+        text: "If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success.",
+        author: "James Cameron"
+      },
+      {
+        text: "Life is what happens when you're busy making other plans.",
+        author: "John Lennon"
+      }
+    ];
+
+    function getRandomQuote() {
+      const randomIndex = Math.floor(Math.random() * quotes.length);
+      return quotes[randomIndex];
+    }
+
+    function displayQuote() {
+      const randomQuote = getRandomQuote();
+      document.getElementById('text').textContent = randomQuote.text;
+      document.getElementById('author').textContent = randomQuote.author;
+      document.getElementById('tweet-quote').href = `https://twitter.com/intent/tweet?text=${encodeURIComponent(randomQuote.text)} - ${encodeURIComponent(randomQuote.author)}`;
+    }
+
+    document.getElementById('new-quote').addEventListener('click', displayQuote);
+
+    displayQuote();
+  </script>
+</body>
+</html>
